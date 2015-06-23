@@ -11,8 +11,8 @@ describe('metalsmith-packagejson', function(){
   it('should have package.json keys', function(done){
     rm('test/fixtures/simple/build');
     var m = Metalsmith('test/fixtures/simple')
-      .use(packagejson({}))
       .use(markdown({}))
+      .use(packagejson({}))
       .use(templates({
         engine: 'swig',
         directory: 'templates'
