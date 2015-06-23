@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-packagejson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loads the contents of package json into a global called pkg",
   "main": "lib/index.js",
   "scripts": {
