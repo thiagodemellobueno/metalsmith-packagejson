@@ -1,0 +1,35 @@
+{
+  "name": "metalsmith-packagejson",
+  "version": "1.0.0",
+  "description": "Loads the contents of package json into a global called pkg",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeofpeople/metalsmith-packagejson.git"
+  },
+  "keywords": [
+    "metalsmith"
+  ],
+  "author": "Thiago de Mello Bueno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madeofpeople/metalsmith-packagejson/issues"
+  },
+  "homepage": "https://github.com/madeofpeople/metalsmith-packagejson#readme",
+  "_from": "metalsmith-packagejson@",
+  "devDependencies": {
+    "assert-dir-equal": "^1.0.1",
+    "metalsmith": "^1.7.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-templates": "^0.7.0",
+    "mocha": "^2.2.5",
+    "rimraf": "^2.4.0",
+    "swig": "^1.4.2"
+  },
+  "dependencies": {
+    "fs": "0.0.2"
+  }
+}
