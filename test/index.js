@@ -24,4 +24,21 @@ describe('metalsmith-packagejson', function(){
       done();
     });
   });
+
+  it('should have merge application package.json keys', function(done){
+    rm('test/fixtures/merge/build');
+    var m = Metalsmith('test/fixtures/merge')
+      .use(markdown({}))
+      .use(packagejson({}))
+      .use(templates({
+        engine: 'swig',
+        directory: 'templates'
+      }));
+
+    m.build(function(err){
+      if (err) return done(err);
+      equal('test/fixtures/merge/build', 'test/fixtures/merge/expected');
+      done();
+    });
+  });
 });
